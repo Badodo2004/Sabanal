@@ -1020,5 +1020,16 @@ html {
   color: inherit;
 }
 
-
+ /* Your CSS goes here or in a separate file */
+        .form-group {
+            margin-bottom: 1em;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+        }
+        .modal-actions {
+            margin-top: 1em;
+        }
 

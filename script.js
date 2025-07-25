@@ -698,3 +698,40 @@ window.addEventListener('load', function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const gmailForm = document.getElementById("gmail-form");
+    const cancelButton = document.getElementById("cancel-gmail");
+
+    gmailForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // This should stop the page reload
+
+        alert("Message sent successfully!");
+        gmailForm.reset(); // optional
+    });
+
+    cancelButton.addEventListener("click", function () {
+        gmailForm.reset();
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("gmail-form");
+
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace this with your actual EmailJS Public Key
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form)
+            .then(function () {
+                alert("Message sent successfully!");
+                form.reset();
+            }, function (error) {
+                alert("Failed to send message: " + error.text);
+            });
+    });
+});
+
+document.getElementById("instagram-link").href = "https://www.instagram.com/itsmee.badodo/";
+
+document.getElementById("discord-link").href = "https://discord.com/users/1265463727285735505";

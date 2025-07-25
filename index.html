@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "4ntQiepbihjL1InwW",
+      });
+   })();
+</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">🚀 Badodo</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="stars"></div>
+        <div class="solar-system">
+            <div class="sun" title="Home"></div>
+            <div class="orbit orbit-1">
+                <div class="planet planet-1" data-section="about" title="About Me"></div>
+            </div>
+            <div class="orbit orbit-2">
+                <div class="planet planet-2" data-section="projects" title="Projects"></div>
+            </div>
+            <div class="orbit orbit-3">
+                <div class="planet planet-3" data-section="contact" title="Contact"></div>
+            </div>
+        </div>
+        <div class="hero-content animate__animated animate__fadeInUp">
+            <h1 class="hero-title">Welcome to My Universe</h1>
+            <p class="hero-subtitle" id="typed-text"></p>
+            <a href="#about" class="cta-button">Explore My Galaxy</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInDown">About the Astronaut</h2>
+            <div class="about-content">
+                <div class="astronaut-card animate__animated animate__fadeInLeft">
+                    <div class="astronaut-image">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="about-text">
+                        <h3>About me</h3>
+                        <p>I’m a consistent and hardworking student who finds joy in doing things that truly make me happy. Currently, I am a 3rd-year BSIT student at St. Mary’s College of Bansalan, Inc., where I also work as a student assistant. Balancing academics and work has helped me develop discipline, time management, and a strong sense of responsibility. I’m passionate about learning and growing—not just in my field of study, but also as a person.</p>
+                        <div class="skills-constellation">
+                            <span class="skill-star">hardworking</span>
+                            <span class="skill-star">Time management</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInDown">Project Archives</h2>
+            <div class="projects-grid">
+                <div class="project-card animate__animated animate__fadeInUp">
+                    <div class="project-planet mars"></div>
+                    <div class="project-content">
+                        <h3>Banking System</h3>
+                        <p> Banking System
+                            Type: Individual Project
+                            Year: 1st Year College (2023)
+                            Description:
+                            Developed a simple banking system as part of an academic project using Java Netbeans. The system allows basic banking operations such as:
+
+                            Creating and managing user accounts
+
+                            Deposits and withdrawals
+
+                            Viewing account balances
+
+                            Ensuring basic input validation and user authentication.
+
+                            </p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Java Netbeans</span>
+                            <span>Canvas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card animate__animated animate__fadeInUp">
+                    <div class="project-planet jupiter"></div>
+                    <div class="project-content">
+                        <h3>Game Controller Using Arduino Nano</h3>
+                        <p>
+                            Year: 2nd Year College (2024)
+                            Description:
+                            Designed and built a functional game controller using an Arduino Nano microcontroller. The controller was developed to simulate basic input functions (e.g., directional buttons, action buttons) and interface with games.</p>
+                        <div class="project-tech">
+                            <span>Arduino Nano</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInDown">Ground Control</h2>
+            <div class="contact-content">
+                <div class="contact-info animate__animated animate__fadeInLeft">
+                    <h3>Ready for Launch?</h3>
+                    <p>Let's embark on an interstellar journey together! Whether you want to collaborate on a project or just say hello from across the galaxy.</p>
+                    <div class="contact-methods">
+                        <a href="#" class="contact-method" id="gmail-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Send Gmail Message</span>
+                        </a>
+                        <a href="#" class="contact-method" id="facebook-link">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook Profile</span>
+                        </a>
+                        <a href="https://github.com/dashboard" target="_blank" class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Repository</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-visual animate__animated animate__fadeInRight">
+                    <div class="satellite">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gmail Modal -->
+    <div id="gmail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-gmail">&times;</span>
+            <div class="gmail-compose">
+                <h3>Send Gmail Message</h3>
+               <form id="gmail-form">
+    <div class="form-group">
+        <label for="gmail-account">Your Gmail Account:</label>
+        <input type="email" id="gmail-account" placeholder="your.email@gmail.com" required>
+    </div>
+
+    <div class="form-group">
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" placeholder="e.g. 09XXXXXXXXX" required>
+    </div>
+
+    <div class="form-group">
+        <label for="gmail-message">Message:</label>
+        <textarea id="gmail-message" rows="3" placeholder="Write your message here..." required></textarea>
+    </div>
+
+    <div class="modal-actions">
+        <button type="submit" class="proceed-btn">Send Message</button>
+        <button type="button" id="cancel-gmail" class="cancel-btn">Cancel</button>
+    </div>
+</form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Facebook Profile Modal -->
+    <div id="facebook-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-facebook">&times;</span>
+            <div class="profile-preview">
+                <div class="profile-image">
+                    <img src="facebook_profile.PNG" alt="Facebook Profile" class="profile-screenshot">
+                </div>
+                <h3>Facebook Profile Preview</h3>
+                <p>This will take you to my Facebook profile where you can connect with me and see my latest updates.</p>
+                <div class="modal-actions">
+                    <button id="proceed-facebook" class="proceed-btn">Yes, Take Me There</button>
+                    <button id="cancel-facebook" class="cancel-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Character and Rocket -->
+    <div class="floating-elements">
+        <div class="character-icon" id="character-icon" title="View Personal Info">
+            <i class="fas fa-user-astronaut"></i>
+        </div>
+        <div class="rocket-icon" id="rocket-icon" title="Back to Home">
+            <i class="fas fa-rocket"></i>
+        </div>
+    </div>
+
+    <!-- Personal Info Modal -->
+    <div id="personal-info-modal" class="personal-modal">
+        <div class="personal-modal-content">
+            <span class="close-personal" id="close-personal">&times;</span>
+            <div class="personal-info-container">
+                <div class="personal-info-left">
+
+                   
+
+                    <h2>About Me</h2>
+                    <div class="personal-details">
+                        <h3>Mission Commander </h3>
+                        <p>I’m a consistent and dedicated individual who finds joy in doing things that truly make me happy. Currently, I am a 3rd-year BSIT student at St. Mary’s College of Bansalan, Inc., where I also work as a student assistant. Balancing both work and academics has taught me discipline, time management, and resilience. I’m passionate about learning and growing—not just in my field of study, but also as a person.</p>
+                        
+                        <div class="info-section">
+                            <h4>👤 Personal Information</h4>
+                            <div class="personal-stats">
+                               <p title="My lovely">
+                                <p title="My lovely">
+                                    <strong>Status:</strong> 
+                                    <a href="https://www.facebook.com/lovely.saoji" target="_blank" class="status-link">Single</a>
+                                    </p>
+
+
+                                <p><strong>Age:</strong> 20 years old</p>
+                                <p><strong>Birthdate:</strong> August 10, 2004</p>
+                                <p><strong>Current Address:</strong> Prk 8, Dalawinon, Magsaysay, Davao del Sur, Philippines</p>
+                                <p><strong>Boarding House Address:</strong> Dahlia St., Bansalan Davao del Sur</p>
+                                <p><strong>Email:</strong> Darylsabanal20@gmail.com</p>
+                                <p><strong>Phone:</strong> 09487502479</p>
+                            </div>
+                        </div>
+
+                        <div class="info-section">
+                            <h4>💼 Work Experience</h4>
+                            <div class="experience-item">
+                                <h5>Farm Laborer</h5>
+                                <span class="duration">2020 - 2022</span>
+                                <p>Helped with planting, maintaining, and harvesting rice in the field.</p>
+                            </div>
+                            <div class="experience-item">
+                                <h5>Student Assistant</h5>
+                                <span class="duration">2023 - Present</span>
+                                <p>Assisted in maintaining cleanliness and orderliness in assigned school areas (2 hours daily).
+
+                                        Performed office-related tasks such as filing, photocopying, and organizing documents (2 hours daily).
+
+                                        Balanced work duties with academic responsibilities as part of the working student program.</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="info-section">
+                               <h4> Education Background </h4>
+                            <h4>Tertiary (College)</h4>
+                            
+                            <div class="education-item">
+                                <h5>Year Graduate: </h5>
+                                <span class="duration">2023 - Present</span>
+                                <p>St. Mary's College of Bansalan Inc.</p>
+                                <p>  </p>
+                            </div>
+
+                            <h4>Senior Highschool</h4>
+                            <div class="education-item">
+                                <h5>Year Graduate: 2023</h5>
+                                <span class="duration">2021 - 2023</span>
+                                <p>Magsaysay Academy Inc.</p>
+                                <p>  </p>
+                            </div>
+                            <h4>Junior High school</h4>
+                            <div class="education-item">
+                                <h5>Year Graduate: 2021</h5>
+                                <span class="duration">2017 - 2021</span>
+                                <p>Dalawinon Elementary School</p>
+                                <p>  </p>
+                            </div>
+
+                            <h4>Elementary</h4>
+                            <div class="education-item">
+                                <h5>Year Graduate: 2017</h5>
+                                <span class="duration">2011 - 2017</span>
+                                <p>Magsaysay Academy Inc.</p>
+                                <p></p>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        
+
+                        <div class="info-section">
+                            <h4>💫 Skills </h4>
+                            <div class="skill-grid">
+                                <span class="skill-badge">Basic Computer Troubleshooting</span>
+                                <span class="skill-badge">Basic Networking</span>
+                                
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="info-section">
+                            <h4>🏆 Achievements</h4>
+                            <ul class="achievements-list">
+                                <h4>Year 2023</h4>
+                                <li>NC Passer</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-info-right">
+                    <div class="profile-image-container">
+                        <img src="dodo.jpg" alt="Personal Photo" class="personal-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

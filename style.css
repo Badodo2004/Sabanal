@@ -1,4 +1,4 @@
-
+x`
 * {
     margin: 0;
     padding: 0;
@@ -620,14 +620,23 @@ html {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Profile Screenshot */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .profile-screenshot {
-    width: 400px;
-    height: 225px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 7px;
     border: 3px solid #1877f2;
     box-shadow: 0 0 20px rgba(24, 119, 242, 0.3);
 }
+
 
 /* Brightness Overlay Effect */
 .brightness-overlay {

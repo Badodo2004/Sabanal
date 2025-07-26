@@ -1032,4 +1032,60 @@ html {
         .modal-actions {
             margin-top: 1em;
         }
+.about-header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.animated-title,
+.animated-subtitle {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  animation: flyInOut 10s ease-in-out infinite;
+  display: inline-block;
+}
+
+.animated-title {
+  font-size: 2.5em;
+  animation-delay: 0s;
+}
+
+.animated-subtitle {
+  font-size: 1.5em;
+  animation-delay: 0.2s;
+}
+
+@keyframes flyInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px); /* prepare to fly in again */
+  }
+}
+.animated-subtitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5em;
+  color: #ffffff;
+  animation: flyInOut 10s ease-in-out infinite;
+  display: inline-block;
+  margin-top: 10px; /* 👈 Add this line */
+}
 

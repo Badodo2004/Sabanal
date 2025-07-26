@@ -1032,6 +1032,7 @@ html {
         .modal-actions {
             margin-top: 1em;
         }
+
 .about-header {
   text-align: center;
   margin-top: 40px;
@@ -1088,4 +1089,3 @@ html {
   display: inline-block;
   margin-top: 10px; /* 👈 Add this line */
 }
-
